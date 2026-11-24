@@ -27,9 +27,9 @@
 
 | Temperatura | Resposta 1 | Resposta 2 | Resposta 3 |
 | :- | :- | :- | :- |
-| 0 | | | |
-| 0.8 | | | |
-| 1.5 | | | |
+| 0 | Il·lustració | Responsabilitat | Particularitat |
+| 0.8 | Excepcionalment | Investigació | Responsabilitat |
+| 1.5 | Resistència | Responsabilitat | Imaginació |
 
 ## Segona prova: una pregunta amb una sola resposta
 
@@ -43,24 +43,28 @@
 
 | Temperatura | Resposta 1 | Resposta 2 | Resposta 3 |
 | :- | :- | :- | :- |
-| 0 | | | |
-| 1.5 | | | |
+| 0 | París | París | París |
+| 1.5 | París | París | París |
 
 ## Preguntes
 
 1. Mireu la taula 1. Les tres respostes amb temperatura 0 són iguals? Per què? Compteu les lletres de la paraula: en té més de 10? Que sempre surti la mateixa paraula vol dir que sigui correcta?
 
    **Resposta:**
+   No són iguals, el model respón amb qualsevol paraula que el pensa que té més de 10 paraules, el model ha encertat 
+   en tots els prompts per totes les temperatures.
 
 2. Què passa quan pugeu la temperatura? Surten paraules diferents? N'hi ha alguna que no tingui més de 10 lletres o que no sembli una paraula real?
 
    **Resposta:**
+   Per aquest exercici no hi hagut cap diferència, el model ha encertat tot.
 
 3. Mireu la taula 2. Les respostes sobre la capital canvien tant com les de la paraula quan puja la temperatura? Per què creieu que la temperatura hi té tan poc efecte? (Pista: quantes respostes correctes té cada pregunta? La temperatura només dona varietat quan el model dubta entre diverses opcions.)
 
    **Resposta:**
+   No canvien, en respostes molt concretes la temperatura no té gran importància però quan hi han moltes respostes correctes si que té importància.
 
 4. Amb les vostres paraules: què fa el paràmetre `temperature`?
 
    **Resposta:**
-
+   La temperatura és un paràmetro que defineix el nivell de creativitat per el model triar les seguents paraules a la genereció de la seva resposta.

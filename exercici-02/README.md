@@ -5,6 +5,7 @@
 **Predicció (abans de començar):** el primer codi que us doni el model funcionarà? Quants intents us caldran?
 
 **La vostra predicció:**
+1
 
 1. **Configureu l'entorn de Python.** Aquest exercici i els següents fan servir Python. No cal crear cap carpeta nova: feu-ho dins del mateix repositori. Només cal fer-ho un cop, amb Visual Studio Code:
 
@@ -79,6 +80,7 @@
 ## El vostre prompt final
 
 _Enganxeu aquí el prompt que heu donat al model per generar `lab.py`._
+ només amb el codi complet, en un sol bloc i sense explicacions no vull completar el codi, has de donar'm tot fer servir `ollama.generate(mode... l=..., prompt=..., options={...})`, que **tots els paràmetres del model** (ara `temperature`; més endavant `seed`, `top_k`, `top_p`, `num_pre... dict`...) han d'anar dins del diccionari `options` i no com a arguments directes de `generate`, i que el text de la resposta és a `r["respons... e"]`. Remarqueu-li que `generate` **no retorna el text directament**, sinó un objecte amb diversos camps, i que cal agafar-ne només el camp `... response` abans de netejar-lo i imprimir-lo.
 
 Deseu l'script `lab.py` a l'arrel del repositori (no en aquesta carpeta).
 
@@ -87,8 +89,9 @@ Deseu l'script `lab.py` a l'arrel del repositori (no en aquesta carpeta).
 1. Quants intents us han calgut? Quins errors ha comès el model (nom del model, paràmetres, lectura dels arguments...) i com els heu resolt?
 
    **Resposta:**
+   El model ha tingut problemes per detectar l'argument temperature
 
 2. Heu llegit el codi abans d'executar-lo? Per què és important entendre el que s'executa a l'ordinador, encara que l'hagi escrit un model?
 
    **Resposta:**
-
+   Si, perquè hi han errors que hem de corregir abans de la execució, a vegades surten erros sense executar i també després de fer-ho.
